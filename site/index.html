@@ -5,39 +5,88 @@
         <title>
             This is The title
         </title>
+
+        <style>
+            h2 {
+                color: darkcyan;
+                text-align: center;
+            }
+            
+            .highlight{
+                font-size: 20px;
+                font-weight: bold;
+                font-style: italic;
+                background-color: blue;
+                opacity: .9;
+            }
+
+            #idThing{
+                font-size: 24px;
+                font-weight: bold;
+                background-color:firebrick;
+                opacity: 0.7;
+            }
+            p, h1, li, ul, ol {
+                color: darkgreen;
+                text-align: center;
+            }
+
+            header li {
+                list-style: none;
+            }
+        </style>
     </head>
     
     <body>
-        <header>
-            <h1 style="color: aquamarine; font-size: 60px; text-align: center;font-family: 'Franklin Gothic Medium'">
+        <header id="top">
+            <h1 style="color: rgb(179, 96, 63); font-size: 60px; text-align: center;font-family: 'Franklin Gothic Medium'">
                 BioChemPhyMath
             </h1>
+        <section>
+            <h2>Shortcuts</h2>
+            <ul>
+                <li><a href="#sec1">Biology</a></li>
+                <li><a href="#sec2">Chemistry</a></li>
+                <li><a href="#sec3">Physics</a></li>
+                <li><a href="#sec4">Math</a></li>
+                <li><a href="#div1">Interest</a></li>
+            </ul>
+        </section>
         </header>
-        <section> <h2>Biology section</h2>
-            <article> <h3>som</h3> sojbgafkiv nafvmzxclvömiasodk niknvgasd ikngv</article>
-            <article> <h3>som</h3> şjnhsgdf n şliak ndfbkanvs dnşvknainfdgnvadfi</article>
+    
+        <section id="sec1"> <h2>Biology</h2>
+            <h3>som</h3>
+            <article class="highlight">  
+                sojbgafkiv nafvmzxclvömiasodk niknvgasd ikngvşjnhsgdf n şliak ndfbkanvs dnşvknainfdgnvadfi
+            </article>
         </section>
     
-        <section> <h2>Chemistry section</h2>
-            <article> <h3>som</h3> knmşokbgmskfi vsdfbsfbjnd şklkidfn bkinmsgdb</article>
-            <article> <h3>som</h3> kşsjbgl aksnfbgaş ldngşakfdgnıojşbknasdfbn</article>
+        <section id="sec2"> <h2>Chemistry</h2>
+            <h3>som</h3>
+            <article class="highlight">  
+                knmşokbgmskfi vsdfbsfbjnd şklkidfn bkinmsgdb kşsjbgl aksnfbgaş ldngşakfdgnıojşbknasdfbn
+            </article>
         </section>
         
-        <section> <h2>Pysics section</h2>
-            <article> <h3>som</h3> kşsjbglaksnfbgaşldngş akfdgnıojşb knasdfbn</article>
-            <article> <h3>som</h3> kşsjbglaksnfb gaşldngşakfdgn ıojşbknasdfbn</article>
+        <section id="sec3"> <h2>Pysics</h2>
+            <h3>som</h3>
+            <article id="idThing">  
+                kşsjbglaksnfbgaşldngş akfdgnıojşb knasdfbn kşsjbglaksnfb gaşldngşakfdgn ıojşbknasdfbn
+            </article>
         </section>
     
-        <section> <h2>Math section</h2>
-            <article> <h3>som</h3> kşsjbgl aksnf bgaşldn gşakfdgnıojşbknas fbn</article>
-            <article> <h3>som</h3> kşsjbglaksnf bgaşldng şakf gnıojşbknasdfbn</article>
+        <section id="sec4"> <h2>Math</h2>
+            <h3>som</h3>
+            <article id="idThing"> 
+                kşsjbgl aksnf bgaşldn gşakfdgnıojşbknas fbn kşsjbglaksnf bgaşldng şakf gnıojşbknasdfbn
+            </article>
         </section>
 
-        <div>
-            this is the list of interest
+        <div id="div1">
+            <h2> List of Interest </h2>
             <ol>
-                <li>sport &amp</li>
-                <li>engineering &gt</li>
+                <li>sport &amp;</li>
+                <li>engineering &gt;</li>
                 <li>art &lt;;</li>
                 <li>science
                     <ul>
@@ -50,11 +99,24 @@
             </ol>
         </div>
 
+        <p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Yavuz_Selim.jpg" width="500" height="500" alt="Yavuz Sultan Selim"> Lorem ipsum dolor si amet
+        </p>
+
+        <a href="#top"><div>back to top</div></a>
+
+        <p>If u click <a href="math.html" title="a link in the same directory">Math</a> it will lead you to the root of all the science.
+        </p>
+
+        <a href="math.html"><div>or &copy; directly click this</div></a>
+
         <p style="text-align: center; font-size: 1.5em; font-family: 'Franklin Gothic Medium';">
             This is the body
             <br>
 		    This is the change in body
         </p>
+
+        <a href="https://beesandbombs.com/" target="_blank"><div>geomekanik</div></a>
         
         <footer>
             <p style="text-align: center;" onclick="alert('JUST DO NOT');"> 
