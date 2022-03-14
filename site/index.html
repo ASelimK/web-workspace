@@ -2,16 +2,18 @@
 <html lang="en">
     
     <head>
-        <title>
-            This is The title
-        </title>
-
+        <title>how great is that</title>
+        <link rel="stylesheet" href="external.css">
         <style>
+            body {
+                color:royalblue;
+                text-align: center;
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+            }   
             h2 {
                 color: darkcyan;
                 text-align: center;
             }
-            
             .highlight{
                 font-size: 20px;
                 font-weight: bold;
@@ -19,7 +21,6 @@
                 background-color: blue;
                 opacity: .9;
             }
-
             #idThing{
                 font-size: 24px;
                 font-weight: bold;
@@ -27,13 +28,36 @@
                 opacity: 0.7;
             }
             p, h1, li, ul, ol {
-                color: darkgreen;
+                color: black;
                 text-align: center;
             }
-
             header li {
                 list-style: none;
             }
+            a:link, a:visited{
+                text-decoration: none;
+                background-color: brown;
+                border: 1px solid blue;
+                color: black;
+                display: block;
+                width:200px;
+                text-align: center;
+                margin-bottom: 1px;
+            }
+
+            a:hover, a:active{
+                background-color: aqua;
+                color: crimson;
+            }
+
+            header li:nth-child(3){
+                font-size: 24px;
+            }
+
+            a div{
+                border: 1px;
+            }
+
         </style>
     </head>
     
@@ -42,16 +66,16 @@
             <h1 style="color: rgb(179, 96, 63); font-size: 60px; text-align: center;font-family: 'Franklin Gothic Medium'">
                 BioChemPhyMath
             </h1>
-        <section>
-            <h2>Shortcuts</h2>
-            <ul>
-                <li><a href="#sec1">Biology</a></li>
-                <li><a href="#sec2">Chemistry</a></li>
-                <li><a href="#sec3">Physics</a></li>
-                <li><a href="#sec4">Math</a></li>
-                <li><a href="#div1">Interest</a></li>
-            </ul>
-        </section>
+            <section>
+                <h2>Shortcuts</h2>
+                <ul>
+                    <li><a href="#sec1">Biology</a></li>
+                    <li><a href="#sec2">Chemistry</a></li>
+                    <li><a href="#sec3">Physics</a></li>
+                    <li><a href="#sec4">Math</a></li>
+                    <li><a href="#div1">Interest</a></li>
+                </ul>
+            </section>
         </header>
     
         <section id="sec1"> <h2>Biology</h2>
@@ -99,13 +123,13 @@
             </ol>
         </div>
 
-        <p>
+        <p style="color: black; background-color: red;">
             <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Yavuz_Selim.jpg" width="500" height="500" alt="Yavuz Sultan Selim"> Lorem ipsum dolor si amet
         </p>
 
-        <a href="#top"><div>back to top</div></a>
+        <a href="#top"><div style="width: 50px;">back to top</div></a>
 
-        <p>If u click <a href="math.html" title="a link in the same directory">Math</a> it will lead you to the root of all the science.
+        <p>If u click <a href="math.html" title="a link in the same directory" style="text-align: center;">Math</a> it will lead you to the root of all the science.
         </p>
 
         <a href="math.html"><div>or &copy; directly click this</div></a>
@@ -126,6 +150,5 @@
             </p>
         </footer>
 
-    </body>
 
 </html>
