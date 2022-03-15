@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            [BOX]
+        </title>
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                background-color: gray;
+            }
+            
+            #box {
+                background-color: blue;
+                padding: 10px 10px 10px 10px;
+                border: 5px solid black;
+                margin: 40px;
+                width: 300px;
+                height: 100px;
+                overflow: auto;
+            }
+
+            #content{
+                background-color: brown;
+            }
+
+            #background{
+                width: 500px;
+                height: 500px;
+                background: url("git.png") no-repeat bottom right cadetblue;
+            }
+                        h1 {
+                margin-bottom: 30px;
+            }
+
+            #certain-div{
+                background-color:rgb(12, 53, 53);
+            }
+
+            p {
+                width: 50%;
+                border: 2px solid black;
+                /* float: left; */
+                padding: 10px;
+
+            }
+
+            #p1{
+                background-color:crimson;
+                height: 150px;
+                float: left;
+                clear: left;
+            }
+
+            #p2{
+                background-color:darkcyan ;
+                float: right;
+                clear: right;
+            }
+
+            #p3{
+                background-color:goldenrod;
+                clear: left;
+                float: left;
+            }
+
+            #p4{
+                background-color:salmon ;
+                clear: right;
+                float: right;
+            }
+
+            section{
+                clear: both;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>BOX MODEL</h1>
+        <div id="box">
+            <div id="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam 
+                ut justo ac neque euismod mattis. Duis a pellentesque nisi. Vestibulum 
+                scelerisque finibus augue commodo viverra. Aliquam erat volutpat. Integer 
+                blandit enim a leo imperdiet, finibus euismod nisi fermentum. Fusce suscipit 
+                urna eu nibh lacinia, a interdum urna bibendum. Aliquam rhoncus dapibus dignissim. 
+                In a dignissim purus. Nunc porta ullamcorper mi non auctor. Donec vel ante id dolor 
+                ullamcorper lacinia vel sed orci. Etiam vestibulum accumsan justo, a vulputate lectus 
+                pretium a. Suspendisse elementum posuere diam, id auctor massa dictum nec. Class 
+                aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+                Nulla facilisi.
+            </div>
+        </div>
+
+        <div id="background">
+            Zaman .
+        </div>
+
+        <div id="certain-div">
+            <p id="p1">Donec vel ante id dolor 
+                ullamcorper lacinia vel sed orci. Etiamnibus euismod nisi fermentum. Fusce suscipit 
+                urna eu nibh lacinia, a interdum urna bibendum. Aliquam rhoncus dapibus dignissim. 
+                In a dignissim puru</p>
+            <p id="p2">Donec vel ante id dolor 
+                ullamcorper lacinia vel sed orci. Etiamnibus euismod nisi fermentum. Fusce suscipit 
+                urna eu nibh lacinia, a interdum urna bibendum. Aliquam rhoncus dapibus dignissim. 
+                In a dignissim purua vel sed orci. Etiamnibus euismod nisi fermentum. Fusce suscipit 
+                urna eu nibh lacinia, a interdum urna bibendum. Aliquam rhoncus dapibus dignissim. 
+                In a dignissim puru</p>
+            <p id="p3"></p>
+            <p id="p4"></p>
+            <section>
+                Donec vel ante id dolor 
+                ullamcorper lacinia vel sed orci. Etiamnibus euismod nisi fermentum. Fusce suscipit 
+                urna eu nibh lacinia, a interdum urna bibendum. Aliquam rhoncus dapibus dignissim. 
+                In a dignissim puru
+            </section>
+        </div>
+    </body>
+</html>
