@@ -1,37 +1,71 @@
 <!DOCTYPE html>
 <html>
-  <div>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Denemeler</title>
+        <script src="dyn.js"></script>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            /* .triangle{
+                height: 100px;
+                width: 100px;
 
-    <div class="button-group">
-      <button id="colorToggle">Color</button>
-      <button id="reverseToggle">Reverse</button>
-      <button id="animModeToggle">Anim mode</button>
-      <button id="animPlayToggle">Playing</button>
-      <link rel="stylesheet" href="arr.scss">
-    </div>
-    
-    <div id="app" class="app">
-      <div class="layers">
-      <script type="i dont know" src="eww.js"></script>
-      <div class="layer layer--12"></div>
-      <div class="layer layer--11"></div>
-      <div class="layer layer--10"></div>
-      <div class="layer layer--9"></div>
-      <div class="layer layer--8"></div>
-      <div class="layer layer--7"></div>
-      <div class="layer layer--6"></div>
-      <div class="layer layer--5"></div>
-      <div class="layer layer--4"></div>
-      <div class="layer layer--3"></div>
-      <div class="layer layer--2"></div>
-      <div class="layer layer--1"></div>
-    </div>
-    
-  </div>
-  
-</div>
-  <div class="reference">
-    <a href="https://twitter.com/beesandbombs/status/1493383853653872643" rel="noopener noreferrer" target="_blank">inspiration from @beesandbombs</a>
-  </div>
+                background-color: blue;
+                margin: 2px;
+                border-bottom: 100px solid black;
+                border-left: 50px solid transparent;
+                border-right: 50px solid  transparent;
+                float: left;
+            } */
+            .star6{
+                width: 240;
+                height: 554;
+                background-color: aquamarine;
 
-  </html>
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <!-- <div> -->
+
+            <!-- <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div> -->
+        <!-- </div> -->
+        <!-- <div>
+
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div> -->
+        <div>
+            <svg style="width:10000px; height: 1000px;">
+                <polyline  class="star6" points="140,103 120,0 100,103"
+                style="fill:none;stroke:green;stroke-width:5;" />
+                <polyline  class="star6" points="80,139 0,208 100,173"
+                style="fill:none;stroke:green;stroke-width:5;" />
+                <polyline  class="star6" points="140,173 240,207 160,139"
+                style="fill:none;stroke:green;stroke-width:5;" />
+                
+                <polyline  class="star6" points="100,104 0,69 80,139"
+                style="fill:none;stroke:black;stroke-width:5;" />
+
+                <polyline  class="star6" points="100,173 120,277 140,173"
+                style="fill:none;stroke:black;stroke-width:5;" />
+                <polyline  class="star6" points="160,139 240,69 140,104"
+                style="fill:none;stroke:black;stroke-width:5;" />
+            </svg>
+        </div>
+            
+    </body>
+</html>
