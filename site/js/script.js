@@ -1,81 +1,36 @@
-var aks = new Object();
-aks.index = 3;
-aks.index.type = "1. bölgede";
-aks.rotation = "small";
-console.log(aks["rotation"]); 
+var array = new Array();
+array[0] = "eyyy";
+array[1] = 2;
+array[2] = function(x,y){return x*y;};
+array[3] = {course: "MATH101"};
+console.log(array);
+console.log(array[1]);
+console.log(array[2](5,4));
+console.log(array[3].course);
+var names = [124,12,2134];
 
-var x = {
-    name: "adf",
-    dsdfa: "gg",
-    rr : 2,
-    ratata: {
-        fname: "asdf",
-        lname: "adfg"
-    }
-};
-console.log(x)
-
-function hifive(x){
-    return x*5;
+for (var i = 0; i<9; i++){
+    console.log(i);
 }
 
-hifive.version = "v.1.0.0";
-console.log(hifive);
-console.log(hifive.toString());
-console.log(hifive.version);
-
-function makeMultiplier(multiply){
-    var myFunc = function(x){
-        return multiply * x;
-    };
-    return myFunc ;
+var Gon = function(gonnumber, color, degree, importance){
+    this.gonnumber = gonnumber;
+    this.color = color;
+    this.degree = degree;
+    this.importance = importance;
 }
 
-var mb3 = makeMultiplier(3);
-console.log(mb3);  
-
-
-var a, b, c, d, e;
-a = 7;
-b = 7;
-b+=8;
-console.log(a);
-console.log(b);
-
-// console.log();
-// console.log();
-// console.log();
-
-function circle(radius){
+Gon.prototype.getGon = function(){
     console.log(this);
 }
-var circ = new circle(10);
-console.log(circ);
 
-function blue(lyrics){
-    this.lyrics = lyrics;
+var circle1 = new Gon(1,"red", 3, 2);
+var square = new Gon(2,"blue", 3, 5);
+
+circle1.getGon();
+square.getGon();
+console.log(circle1);
+
+for(var x in square){
+    console.log(x + ": " + square[x]);
 }
-
-blue.prototype.getlyrics = function (){
-    return this.lyrics;}
-
-var x = new blue("almost");
-console.log(x);
-console.log("-------------------");
-
-
-var hexagon = {
-    length: 10,
-
-    getArea: function(){
-        var self = this;
-        console.log(this.length);
-    
-        var increaseRadius = function (){
-            this.length = 230;
-        };
-        increaseRadius();
-        console.log(this);
-    }   
-};
-console.log(hexagon.getArea());
