@@ -5,67 +5,54 @@
         <title>Denemeler</title>
         <script src="dyn.js"></script>
         <style>
-            *{
+            * {
                 box-sizing: border-box;
             }
-            /* .triangle{
-                height: 100px;
-                width: 100px;
-
-                background-color: blue;
-                margin: 2px;
-                border-bottom: 100px solid black;
-                border-left: 50px solid transparent;
-                border-right: 50px solid  transparent;
-                float: left;
-            } */
             .star6{
-                width: 240;
-                height: 554;
+                width: 250;
+                height: 560;
                 background-color: aquamarine;
-
+                margin: 10px;
             }
-            
+            polyline {
+                fill: none;
+                stroke-width: 5px;
+            }
         </style>
     </head>
 
     <body>
-        <!-- <div> -->
-
-            <!-- <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div> -->
-        <!-- </div> -->
-        <!-- <div>
-
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-        </div> -->
+        <p id="demo">
+        </p>
         <div>
-            <svg style="width:10000px; height: 1000px;">
-                <polyline  class="star6" points="140,103 120,0 100,103"
-                style="fill:none;stroke:green;stroke-width:5;" />
-                <polyline  class="star6" points="80,139 0,208 100,173"
-                style="fill:none;stroke:green;stroke-width:5;" />
-                <polyline  class="star6" points="140,173 240,207 160,139"
-                style="fill:none;stroke:green;stroke-width:5;" />
+            <svg style="width:10000px; height: 10000px; stroke-linecap: round;"">
                 
-                <polyline  class="star6" points="100,104 0,69 80,139"
-                style="fill:none;stroke:black;stroke-width:5;" />
+                <polyline id="|1" class="star6" points="140,103 120,0 100,103"
+                style="stroke:green;" />
+                
+                <polyline id=">2" class="star6" points="80,139 0,208 100,173"
+                style="stroke:green;" />
+                
+                <polyline id="<2" class="star6" points="140,173 240,207 160,139"
+                style="stroke:green;" />
+                
+                <polyline id="|2" class="star6" points="100,173 120,277 140,173"
+                style="stroke:black;" />
+                
+                <polyline id="<1" class="star6" points="100,104 0,69 80,139"
+                style="stroke:black;" />
+                
+                <polyline id=">1" class="star6" points="160,139 240,69 140,104"
+                style="stroke:black;" />
 
-                <polyline  class="star6" points="100,173 120,277 140,173"
-                style="fill:none;stroke:black;stroke-width:5;" />
-                <polyline  class="star6" points="160,139 240,69 140,104"
-                style="fill:none;stroke:black;stroke-width:5;" />
             </svg>
+            <script>
+                // document.getElementById("|1").style.stroke = "red";
+                document.getElementById("demo").innerHTML = "Date: " + Date();
+            </script>
+            
         </div>
             
     </body>
+    
 </html>
