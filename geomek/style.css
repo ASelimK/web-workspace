@@ -1,0 +1,36 @@
+/* 
+svg {
+    width: 1500px;
+    height: 1500px;
+    stroke-linecap: round;
+}
+
+polyline {
+    class: "star6"
+    points:"140,103 120,0 100,103"
+    style:"stroke:green;"  
+    width: "adg"
+    transform: "rotate(0,140,103)";
+} */
+
+/* <svg style="width:1500px; height: 1500px; stroke-linecap: round;"">
+                
+<polyline id="|1" class="star6" points="140,103 120,0 100,103"
+style="stroke:green;"  transform="rotate(0,140,103)"/>
+
+<polyline id=">2" class="star6" points="80,139 0,208 100,173"
+style="stroke:green;" />
+
+<polyline id="<2" class="star6" points="140,173 240,207 160,139"
+style="stroke:green;" />
+
+<polyline id="|2" class="star6" points="100,173 120,277 140,173"
+style="stroke:black;" />
+
+<polyline id="<1" class="star6" points="100,104 0,69 80,139"
+style="stroke:black;" />
+
+<polyline id=">1" class="star6" points="160,139 240,69 140,104"
+style="stroke:black;" />
+
+</svg> */
