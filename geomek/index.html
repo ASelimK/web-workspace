@@ -25,64 +25,54 @@
         <p id="demo">
         </p>
         <div>
-            <svg style="width:240; height: 277px; stroke-linecap: round; ">
-                
-                <polyline id="north" class="star6" points="140,103 120,0 100,103 "
-                style="stroke:green;" transform="rotate(15)" />
-                
-                <polyline id="southwest" class="star6" points="80,139 0,208 100,173"
-                style="stroke:green;" />
-                
-                <polyline id="southeast" class="star6" points="140,173 240,207 160,139"
-                style="stroke:green;" />
-                
-                <polyline id="south" class="star6" points="100,173 120,277 140,173"
-                style="stroke:black;" />
-                
-                <polyline id="northwest" class="star6" points="100,104 0,69 80,139"
-                style="stroke:black;" />
-                
-                <polyline id="northeast" class="star6" points="160,139 240,69 140,104"
-                style="stroke:black;" />
+            <svg style="width:240px; height: 277px; stroke-linecap: round; ">
+                <defs>
+    
+                    <polyline id="north" class="star6" points="140,103 120,0 100,103 "
+                    style="stroke:green;"/>
+                    
+                    <polyline id="southwest" class="star6" points="80,139 0,208 100,173"
+                    style="stroke:green;" />
+                    
+                    <polyline id="southeast" class="star6" points="140,173 240,207 160,139"
+                    style="stroke:green;" />
+                    
+                    <polyline id="south" class="star6" points="100,173 120,277 140,173"
+                    style="stroke:black;" />
+                    
+                    <polyline id="northwest" class="star6" points="100,104 0,69 80,139"
+                    style="stroke:black;" />
+                    
+                    <polyline id="northeast" class="star6" points="160,139 240,69 140,104"
+                    style="stroke:black;" />
 
+                </defs>
+            
+                <g>
+                    <use xlink:href="#north"/>
+                    <use xlink:href="#southwest"/>
+                    <use xlink:href="#southeast"/>
+                    <use xlink:href="#south"/>
+                    <use xlink:href="#northwest"/>
+                    <use xlink:href="#northeast"/>
+                    
+                </g>
+
+
+            </svg>
+            <svg>
+                <g>
+                    <use xlink:href="#north"/>
+                    <use xlink:href="#southwest"/>
+                    <use xlink:href="#southeast"/>
+                    <use xlink:href="#south"/>
+                    <use xlink:href="#northwest"/>
+                    <use xlink:href="#northeast"/>
+                </g>
             </svg>
 
         </div>
         <div>
-            <svg viewBox="-40 0 150 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <g fill="grey"
-                   transform="rotate(-10 50 100)
-                              translate(-36 45.5)
-                              skewX(40)
-                              scale(1 0.5)">
-                  <!-- <path id="heart" d="M 10,30 A 20,20 0,0,1 50,30 A 20,20 0,0,1 90,30 Q 90,60 50,90 Q 10,60 10,30 z" /> -->
-                  <path id="heart" d="M10,30 20,20 0,0,1 50,30 20,20 0,0,1 90,30 90,60 50,90 10,60 10,30" />
-                </g>
-                <use xlink:href="#heart" fill="none" stroke="red"/>
-                
-            </svg>
-            <svg>
-                <ellipse cx="25" cy="25" rx="20" ry="10" stroke="blue" stroke-width="1px"></ellipse>
-            </svg>
-            <svg>
-                <rect x="100" y="50" rx="50" ry="10" width="60" height="60" transform="rotate(15)"/>
-            </svg>
-            <svg>
-                <circle cx="75" cy="75" r="50"/>
-            </svg>
-            <svg>
-                <line x1="100" y1="100" x2="200" y2="200" stroke="black" stroke-width="5"/>
-            </svg>
-            <svg width="100" height="100">
-                
-                <path d="M 10 10 H 90 V 90 H 10 Z" fill="transparent" stroke="black"></path>
-
-                <circle cx="10" cy="10" r="2" fill="red"></circle>
-                <circle cx="90" cy="10" r="2" fill="red"></circle>
-                <circle cx="90" cy="90" r="2" fill="red"></circle>
-                <circle cx="10" cy="90" r="2" fill="red"></circle>
-                
-            </svg>
                 
 
 
